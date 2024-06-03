@@ -53,5 +53,8 @@ Route::delete('/posts/{post} ' , [PostController::class , 'destroy'])-> name('po
 
 //! Posts => is object from collection 
 
-//! post => is object from model class 
+//! post => is object from model class
 
+//! one User have many Posts
+
+//! ORM -> Object-Relational Mapper -> عشان احول من الداتا بيز record الي objects

@@ -19,9 +19,9 @@
     Post Creator Info
   </div>
   <div class="card-body">
-    <h5 class="card-title">Name : Kareem </h5>
-    <p class="card-text">Email : Kareem@gmail.com </p>
-    <p class="card-text">Create At  : Kareem@gmail.com </p>
+    <h5 class="card-title">Name : {{$post->user? $post->user->name  :"Not Found"}} </h5>
+    <p class="card-text">Email : {{$post->user? $post->user->email :"Not Found"}} </p>
+    <p class="card-text">Create At  :  {{$post->user? $post->user->created_at: "Not Found"}} </p>
 
 @endsection
 
